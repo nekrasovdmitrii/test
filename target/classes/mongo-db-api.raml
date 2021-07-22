@@ -1,0 +1,43 @@
+#%RAML 0.8
+title: API Template using Resource Types
+version: v1
+baseUri: http://localhost:8081/api
+protocols: [ HTTP ] 
+
+ 
+
+mediaType: application/json
+
+ 
+
+/accounts:
+  get:
+    description: Get all accounts
+    responses: 
+      200:
+        body:
+          application/json:
+  post:
+      description: Create account
+      body: 
+        application/json:
+      responses:
+          200:
+            body:
+              application/json:
+  /{id}:
+    patch:
+      description: Update account
+              
+    delete:
+      description: Delete account 
+      
+    get:
+      description: Get account by id
+      responses: 
+        200:
+          body:
+            application/json:
+
+
+
